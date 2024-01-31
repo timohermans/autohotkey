@@ -66,19 +66,21 @@ CapsLock & w::^#Left
 CapsLock & e::^#Right
 
 ;Mac behaviour
-!c::Send ^c
-!v::Send ^v
 !a::Send ^a
+!c::Send ^c
 !f::Send ^f
+!l::Send ^l
+!q::Send !{F4}
+!r::Send ^r
 !s::Send ^s
+!t::Send ^t
+!v::Send ^v
+!w::Send ^{F4}
 !x::Send ^x
 !z::Send ^z
-!l::Send ^l
-!t::Send ^t
-!q::Send !{F4}
-!w::Send ^{F4}
 !BackSpace::Send +{Home}{BackSpace}
 #Left::Send ^{Left}
 #Right::Send ^{Right}
+#BackSpace::Send ^{BackSpace}
 !Left::Send {Home}
 !Right::Send {End}
