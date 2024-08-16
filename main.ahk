@@ -84,3 +84,139 @@ CapsLock & e::^#Right
 #BackSpace::Send ^{BackSpace}
 !Left::Send {Home}
 !Right::Send {End}
+
+; Regular mappings
+RAlt & h::Send {Left}
+<^>!h::Send {Left}
+RAlt & j::Send {Down}
+<^>!j::Send {Down}
+RAlt & k::Send {Up}
+<^>!k::Send {Up}
+RAlt & l::Send {Right}
+<^>!l::Send {Right}
+RAlt & q::Send {F1}
+<^>!q::Send {F1}
+RAlt & w::Send {F2}
+<^>!w::Send {F2}
+RAlt & e::Send {F3}
+<^>!e::Send {F3}
+RAlt & r::Send {F4}
+<^>!r::Send {F4}
+RAlt & a::Send {F5}
+<^>!a::Send {F5}
+RAlt & s::Send {F6}
+<^>!s::Send {F6}
+RAlt & d::Send {F7}
+<^>!d::Send {F7}
+RAlt & f::Send {F8}
+<^>!f::Send {F8}
+RAlt & z::Send {F9}
+<^>!z::Send {F9}
+RAlt & x::Send {F10}
+<^>!x::Send {F10}
+RAlt & c::Send {F11}
+<^>!c::Send {F11}
+RAlt & v::Send {F12}
+<^>!v::Send {F12}
+
+; Shift mappings
+>!+h::Send +{Left}
++<^>!h::Send +{Left}
+>!+j::Send +{Down}
++<^>!j::Send +{Down}
+>!+k::Send +{Up}
++<^>!k::Send +{Up}
+>!+l::Send +{Right}
++<^>!l::Send +{Right}
+>!+q::Send +{F1}
++<^>!q::Send +{F1}
+>!+w::Send +{F2}
++<^>!w::Send +{F2}
+>!+e::Send +{F3}
++<^>!e::Send +{F3}
+>!+r::Send +{F4}
++<^>!r::Send +{F4}
+>!+a::Send +{F5}
++<^>!a::Send +{F5}
+>!+s::Send +{F6}
++<^>!s::Send +{F6}
+>!+d::Send +{F7}
++<^>!d::Send +{F7}
+>!+f::Send +{F8}
++<^>!f::Send +{F8}
+>!+z::Send +{F9}
++<^>!z::Send +{F9}
+>!+x::Send +{F10}
++<^>!x::Send +{F10}
+>!+c::Send +{F11}
++<^>!c::Send +{F11}
+>!+v::Send +{F12}
++<^>!v::Send +{F12}
+
+; Control mappings
+>!^h::Send ^{Left}
+^<^>!h::Send ^{Left}
+>!^j::Send ^{Down}
+^<^>!j::Send ^{Down}
+>!^k::Send ^{Up}
+^<^>!k::Send ^{Up}
+>!^l::Send ^{Right}
+^<^>!l::Send ^{Right}
+>!^q::Send ^{F1}
+^<^>!q::Send ^{F1}
+>!^w::Send ^{F2}
+^<^>!w::Send ^{F2}
+>!^e::Send ^{F3}
+^<^>!e::Send ^{F3}
+>!^r::Send ^{F4}
+^<^>!r::Send ^{F4}
+>!^a::Send ^{F5}
+^<^>!a::Send ^{F5}
+>!^s::Send ^{F6}
+^<^>!s::Send ^{F6}
+>!^d::Send ^{F7}
+^<^>!d::Send ^{F7}
+>!^f::Send ^{F8}
+^<^>!f::Send ^{F8}
+>!^z::Send ^{F9}
+^<^>!z::Send ^{F9}
+>!^x::Send ^{F10}
+^<^>!x::Send ^{F10}
+>!^c::Send ^{F11}
+^<^>!c::Send ^{F11}
+>!^v::Send ^{F12}
+^<^>!v::Send ^{F12}
+
+; Control + Shift mappings
+>!^+h::Send ^+{Left}
+^+<^>!h::Send ^+{Left}
+>!^+j::Send ^+{Down}
+^+<^>!j::Send ^+{Down}
+>!^+k::Send ^+{Up}
+^+<^>!k::Send ^+{Up}
+>!^+l::Send ^+{Right}
+^+<^>!l::Send ^+{Right}
+>!^+q::Send ^+{F1}
+^+<^>!q::Send ^+{F1}
+>!^+w::Send ^+{F2}
+^+<^>!w::Send ^+{F2}
+>!^+e::Send ^+{F3}
+^+<^>!e::Send ^+{F3}
+>!^+r::Send ^+{F4}
+^+<^>!r::Send ^+{F4}
+>!^+a::Send ^+{F5}
+^+<^>!a::Send ^+{F5}
+>!^+s::Send ^+{F6}
+^+<^>!s::Send ^+{F6}
+>!^+d::Send ^+{F7}
+^+<^>!d::Send ^+{F7}
+>!^+f::Send ^+{F8}
+^+<^>!f::Send ^+{F8}
+>!^+z::Send ^+{F9}
+^+<^>!z::Send ^+{F9}
+>!^+x::Send ^+{F10}
+^+<^>!x::Send ^+{F10}
+>!^+c::Send ^+{F11}
+^+<^>!c::Send ^+{F11}
+>!^+v::Send ^+{F12}
+^+<^>!v::Send ^+{F12}
