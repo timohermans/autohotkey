@@ -12,6 +12,34 @@ FormatTime, CurrentDateTime,, dd-MM-yyyy
 Send, %CurrentDateTime%
 Return
 
+::]cps::
+Send, User ID=postgres;Password=P@ssw0rd;Host=localhost;Port=5432;Database=database;{Esc}{Shift down}{f}{Shift up}{d}{v}{e}
+Return
+
+::]cms::
+Send, Server=127.0.0.1;Database=master;User Id=SA;Password=P@ssw0rd;TrustServerCertificate=True;{Esc}{Shift down}{f}{Shift up}{m}{v}{e}
+Return
+
+::]binj::
+Send, [Inject] public  {{} get; set; {}} = default{!};{Esc}{Shift down}{f}{Shift up}{c}{a}
+return
+
+::]bil::
+Send, [Inject] public ILogger<> Logger {{} get; set; {}} = default{!};{Esc}{Shift down}{f}{Shift up}{<}{a}
+return
+
+::]li::
+Send, logger.LogInformation("");{Left}{Left}{Left}
+return
+
+::]bli::
+Send, Logger.LogInformation("");{Left}{Left}{Left}
+return
+
+::]blw::
+SendRaw, Logger.LogWarning("");{Left}{Left}{Left}
+return
+
 ApplicationToggle(name) 
 {
     if (WinExist("ahk_exe " + name))
@@ -48,22 +76,22 @@ return
 ; # = left win
 ; ! = left alt
 
-CapsLock & c::^c
-CapsLock & v::^v
-CapsLock & a::^a
-CapsLock & z::^z
+;CapsLock & c::^c
+;CapsLock & v::^v
+;CapsLock & a::^a
+;CapsLock & z::^z
 
-CapsLock & f::#e
-CapsLock & q::!F4
+;CapsLock & f::#e
+;CapsLock & q::!F4
 
-CapsLock & 1::#1
-CapsLock & 2::#2
-CapsLock & 3::#3
-CapsLock & 4::#4
-CapsLock & 5::#5
+;CapsLock & 1::#1
+;CapsLock & 2::#2
+;CapsLock & 3::#3
+;CapsLock & 4::#4
+;CapsLock & 5::#5
 
-CapsLock & w::^#Left
-CapsLock & e::^#Right
+;CapsLock & w::^#Left
+;CapsLock & e::^#Right
 
 ;Mac behaviour
 !a::Send ^a
@@ -94,30 +122,43 @@ RAlt & k::Send {Up}
 <^>!k::Send {Up}
 RAlt & l::Send {Right}
 <^>!l::Send {Right}
+
 RAlt & q::Send {F1}
 <^>!q::Send {F1}
+CapsLock & q::Send {F1}
 RAlt & w::Send {F2}
 <^>!w::Send {F2}
+CapsLock & w::Send {F2}
 RAlt & e::Send {F3}
 <^>!e::Send {F3}
+CapsLock & e::Send {F3}
 RAlt & r::Send {F4}
 <^>!r::Send {F4}
+CapsLock & r::Send {F4}
 RAlt & a::Send {F5}
 <^>!a::Send {F5}
+CapsLock & a::Send {F5}
 RAlt & s::Send {F6}
 <^>!s::Send {F6}
+CapsLock & s::Send {F6}
 RAlt & d::Send {F7}
 <^>!d::Send {F7}
+CapsLock & d::Send {F7}
 RAlt & f::Send {F8}
 <^>!f::Send {F8}
+CapsLock & f::Send {F8}
 RAlt & z::Send {F9}
 <^>!z::Send {F9}
+CapsLock & z::Send {F9}
 RAlt & x::Send {F10}
 <^>!x::Send {F10}
+CapsLock & x::Send {F10}
 RAlt & c::Send {F11}
 <^>!c::Send {F11}
+CapsLock & c::Send {F11}
 RAlt & v::Send {F12}
 <^>!v::Send {F12}
+CapsLock & v::Send {F12}
 
 ; Shift mappings
 >!+h::Send +{Left}
@@ -170,6 +211,10 @@ RAlt & v::Send {F12}
 ^<^>!e::Send ^{F3}
 >!^r::Send ^{F4}
 ^<^>!r::Send ^{F4}
+
+<!>!r::Send <!{F4}
+<!<^>!r::Send <!{F4}
+
 >!^a::Send ^{F5}
 ^<^>!a::Send ^{F5}
 >!^s::Send ^{F6}
